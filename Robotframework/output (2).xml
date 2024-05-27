@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-26T07:06:40.618567" rpa="false" schemaversion="5">
+<suite id="s1" name="Msg1" source="C:\Users\Administrator\Desktop\WiproProjectRobo\DayOne\Msg1.robot">
+<test id="s1-t1" name="greet Morning Mesg" line="9">
+<kw name="Greet" owner="CustomerLib">
+<msg time="2024-05-26T07:06:40.681089" level="INFO">${msg1} = First Name: Pytest framework</msg>
+<var>${msg1}</var>
+<arg>${NAME}</arg>
+<status status="PASS" start="2024-05-26T07:06:40.681089" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${msg1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-26T07:06:40.681089" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-26T07:06:40.681089" elapsed="0.000000"/>
+</test>
+<test id="s1-t2" name="Mesg" line="13">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-05-26T07:06:40.681089" level="INFO">${another_name} = NMS Wipro batch</msg>
+<var>${another_name}</var>
+<arg>NMS Wipro batch</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-05-26T07:06:40.681089" elapsed="0.000000"/>
+</kw>
+<kw name="Greet" owner="CustomerLib">
+<msg time="2024-05-26T07:06:40.681089" level="INFO">${another_user} = First Name: NMS Wipro batch</msg>
+<var>${another_user}</var>
+<arg>${another_name}</arg>
+<status status="PASS" start="2024-05-26T07:06:40.681089" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${another_user}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-26T07:06:40.681089" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-26T07:06:40.681089" elapsed="0.000000"/>
+</test>
+<test id="s1-t3" name="Good night message" line="18">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-05-26T07:06:40.696679" level="INFO">${name} = Good Night</msg>
+<var>${name}</var>
+<arg>Good Night</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-05-26T07:06:40.696679" elapsed="0.000000"/>
+</kw>
+<kw name="Greet" owner="CustomerLib">
+<msg time="2024-05-26T07:06:40.696679" level="INFO">${msg} = First Name: Good Night</msg>
+<var>${msg}</var>
+<arg>${name}</arg>
+<status status="PASS" start="2024-05-26T07:06:40.696679" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${msg}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-26T07:06:40.696679" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-26T07:06:40.681089" elapsed="0.015590"/>
+</test>
+<status status="PASS" start="2024-05-26T07:06:40.618567" elapsed="0.078112"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Msg1">Msg1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

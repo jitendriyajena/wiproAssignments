@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-26T07:40:40.327973" rpa="false" schemaversion="5">
+<suite id="s1" name="AppTest" source="C:\Users\Administrator\Desktop\WiproProjectRobo\Inventory\AppTest.robot">
+<test id="s1-t1" name="bank Test" line="10">
+<kw name="Bank" owner="AppCall">
+<msg time="2024-05-26T07:40:40.406199" level="INFO">${result} = 9</msg>
+<var>${result}</var>
+<arg>4</arg>
+<arg>5</arg>
+<status status="PASS" start="2024-05-26T07:40:40.406199" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-05-26T07:40:40.406199" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result}</arg>
+<arg>9</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-05-26T07:40:40.406199" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-26T07:40:40.406199" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-26T07:40:40.406199" elapsed="0.000000"/>
+</test>
+<test id="s1-t2" name="Stock Test" line="15">
+<kw name="Stock" owner="AppCall">
+<msg time="2024-05-26T07:40:40.406199" level="INFO">${result} = 5</msg>
+<var>${result}</var>
+<arg>10</arg>
+<arg>5</arg>
+<status status="PASS" start="2024-05-26T07:40:40.406199" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-05-26T07:40:40.406199" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result}</arg>
+<arg>5</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-05-26T07:40:40.406199" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-26T07:40:40.406199" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-26T07:40:40.406199" elapsed="0.000000"/>
+</test>
+<test id="s1-t3" name="Display Test" line="21">
+<kw name="Stock" owner="AppCall">
+<arg>400</arg>
+<arg>500</arg>
+<status status="PASS" start="2024-05-26T07:40:40.406199" elapsed="0.000000"/>
+</kw>
+<kw name="Get Current Result" owner="AppCall">
+<msg time="2024-05-26T07:40:40.406199" level="INFO">${result} = -100</msg>
+<var>${result}</var>
+<status status="PASS" start="2024-05-26T07:40:40.406199" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-05-26T07:40:40.406199" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result}</arg>
+<arg>-100</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-05-26T07:40:40.406199" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-26T07:40:40.406199" elapsed="0.000000"/>
+</test>
+<status status="PASS" start="2024-05-26T07:40:40.327973" elapsed="0.078226"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="AppTest">AppTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

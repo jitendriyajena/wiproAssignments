@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-26T08:40:16.716418" rpa="false" schemaversion="5">
+<suite id="s1" name="DBone" source="C:\Users\Administrator\Desktop\WiproProjectRobo\DatabaseOne\DBone.robot">
+<test id="s1-t1" name="verify table creations" line="22">
+<kw name="excute sql string">
+<msg time="2024-05-26T08:40:16.816848" level="FAIL">No keyword with name 'excute sql string' found. Did you mean:
+    DatabaseLibrary.Execute Sql String</msg>
+<var>${output}</var>
+<arg>create</arg>
+<arg>Table</arg>
+<arg>Pay( empId int, empname varchar(255), amt int</arg>
+<status status="FAIL" start="2024-05-26T08:40:16.816848" elapsed="0.000000">No keyword with name 'excute sql string' found. Did you mean:
+    DatabaseLibrary.Execute Sql String</status>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${output}</arg>
+<arg>None</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2024-05-26T08:40:16.816848" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-26T08:40:16.801102" elapsed="0.015746">No keyword with name 'excute sql string' found. Did you mean:
+    DatabaseLibrary.Execute Sql String</status>
+</test>
+<status status="FAIL" start="2024-05-26T08:40:16.716418" elapsed="0.100430"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="DBone">DBone</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
